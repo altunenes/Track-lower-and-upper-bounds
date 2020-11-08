@@ -1,4 +1,4 @@
-
+library(Rmisc)
 
 
 cof<-function(x){ #your data
