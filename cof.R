@@ -1,7 +1,7 @@
 
 
 
-cof<-function(x){
+cof<-function(x){ #your data
   
   
   starts<-1
