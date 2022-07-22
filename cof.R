@@ -1,9 +1,6 @@
 library(Rmisc)
-
-
 cof<-function(x){ #your data
-  
-  
+    
   starts<-1
   ends<-length(x)
   
@@ -17,11 +14,8 @@ cof<-function(x){ #your data
   
   result<-list()
   result[['values that > upper bound']]<-numeric()
-  result[['values that < lower bound']]<-numeric()
-  
-  
-  while(TRUE){
-    
+  result[['values that < lower bound']]<-numeric()  
+  while(TRUE){    
     if(x[[starts]]>upper){
       d=x[starts]
       result[['values that > upper bound']]<-append(result[['values that > upper bound']],d) 
@@ -35,14 +29,9 @@ cof<-function(x){ #your data
     
     if(starts==ends){
       break
-    }
-    
-  }
-  
-  
-  return(result)
-  
-  
+    }    
+  }   
+  return(result)  
 }
 
 #cofresults<-cof(x) x is your data
